@@ -1,0 +1,147 @@
+.second {
+    width: 30%;
+    /* height: 100%; */
+    /* border: 2px solid red; */
+    border-radius: 6px;
+    position: absolute;
+    left: 5%;
+    top: 29%;
+    box-shadow: 1px 0px 9px 1px #7167ab;
+    /* margin-top: 200px;
+    margin-left: 300px; */
+}
+
+.second form {
+    padding: 5px;
+
+}
+
+.second form input {
+    margin: 15px;
+}
+
+.second .submit {
+    font-size: 20px;
+}
+#form {
+    font-family: cursive;
+    font-weight: bold;
+    padding-left: 18px;
+    font-size: 22px;
+}
+#name {
+    margin-left: 35px;
+    font-size: 1rem;
+    width: 50%;
+    
+}
+#class {
+    margin-left: 42px;
+    font-size: 1rem;
+    width: 50%;
+
+}
+#phone{
+    margin-left: 0px;
+    font-size: 1rem;
+    width: 50%;
+
+}
+
+#subject {
+    margin-left: 12px;
+    font-size: 1rem;
+    width: 50%;
+
+}
+
+.suscribe .btn {
+    background-color: red;
+    /* color: rgb(16, 174, 242); */
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 2px;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 6px;
+}
+
+.suscribe {
+    background-color: rgb(115, 115, 232);
+    border: none;
+    border-radius: 3px;
+
+}
+
+.suscribe h4 {
+    color: rgb(17, 25, 15);
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.suscribe form {
+    display: block;
+    text-align: center;
+}
+
+.suscribe .in {
+    width: 50%;
+    height: 45px;
+    margin-right: 0px;
+    border-radius: 5px;
+}
+.pdf {
+    display: inline-block;
+    position: absolute;
+    left: 42%;
+    top: 25%;
+}
+
+.pdf h2 {
+    text-decoration: underline;
+}
+
+.pdf p {
+    color: red;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    /* border: 3px solid rgb(221, 45, 5); */
+    box-shadow: 1px 0px 9px 2px #7167ab;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.pdf a {
+    color: rgb(8, 167, 48);
+    text-decoration: none;
+}
+
+.pdf p:hover {
+    background-color: rgb(219, 229, 226);
+}
+
+.pdf p a:hover{
+    color: rgb(241, 13, 241);
+}
+.pdf h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    font-size: 21px;
+}
+
+.pdf h3 {
+    color: rgb(221, 20, 181);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    font-size: x-large;
+}

@@ -1,0 +1,139 @@
+.second {
+    width: 50%;
+    /* border: 2px solid red; */
+    border-radius: 6px;
+    position: absolute;
+    left: 2%;
+    top: 18%;
+    box-shadow: 1px 0px 9px 1px #7167ab;
+    /* margin-top: 200px;
+    margin-left: 300px; */
+}
+
+.second form {
+    padding: 5px;
+
+}
+
+.second form input {
+    margin: 10px;
+}
+
+.second .submit {
+    margin-left: 40%;
+    font-size: 1rem;
+}
+
+.suscribe .btn {
+    background-color: red;
+    /* color: rgb(16, 174, 242); */
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 2px;
+    padding: 10px 10px ;
+    border: none;
+    border-radius: 6px;
+}
+
+.suscribe {
+    background-color: rgb(105, 105, 215);
+    border: none;
+    border-radius: 3px;
+
+}
+
+.suscribe h4 {
+    color: rgb(17, 25, 15);
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.suscribe form {
+    display: block;
+    text-align: center;
+}
+
+.suscribe .in {
+    width: 90%;
+    height: 45px;
+    margin-left: 0px;
+    border-radius: 5px;
+    margin-right: 0px;
+   
+}
+
+.phynotes {
+    display: inline-grid;
+}
+
+.phynotes h2 {
+    text-decoration: underline;
+}
+
+.phynotes p {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    border: 3px solid rgb(221, 45, 5);
+    padding: 5px;
+    margin: 16px;
+}
+
+.phynotes a {
+    /* color: rgb(8, 167, 48); */
+    color: black;
+    text-decoration: none;
+}
+
+.phynotes p:hover {
+    /* color: rgb(11, 11, 11); */
+    background-color: rgb(219, 229, 226);
+}
+
+#form {
+    font-family: cursive;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 1.4rem;
+}
+#name {
+    margin-left: 0px;
+    font-size: 1.2rem;
+    width: 90%;
+    
+}
+#class {
+    margin-left: 0px;
+    font-size: 1.2rem;
+    width: 90%;
+}
+#phone{
+    margin-left: 0px;
+    font-size: 1.2rem;
+    width: 90%;
+}
+#subject {
+    margin-left: 0px;
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+.pdf {
+    display: inline-block;
+    position: absolute;
+    left: 54%;
+    top: 25%;
+}
+.pdf h3 {
+    color: rgb(221, 20, 181);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    font-size: 1.2rem;
+}
