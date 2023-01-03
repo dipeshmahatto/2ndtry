@@ -32,11 +32,10 @@ nav a {
     /* border: 3px solid rgb(247, 5, 21); */
 }
 
-nav a:hover {
+/* nav a:hover {
     text-decoration: 4px rgb(207, 53, 53) underline;
       color: rgb(92, 112, 203);
-    /* background-color: rgb(60, 223, 45); */
-}
+} */
 
 .second {
     width: 30%;
@@ -229,6 +228,7 @@ hr{
     background-color: #e5a1a1;
 }
 body > h2{
+    color:green;
     margin-top: 25px;
     font-size: 40px;
     text-align: center;
