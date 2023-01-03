@@ -145,3 +145,10 @@
     margin: 20px;
     font-size: x-large;
 }
+
+body > h2{
+    margin-top: 50px;
+    font-size: 30px;
+    /* text-align: center; */
+    text-decoration: 3px solid red underline;
+}
