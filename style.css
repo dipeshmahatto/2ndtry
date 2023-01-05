@@ -189,6 +189,35 @@ body p {
     background-color: rgb(219, 229, 226);
 }
 
+
+.chynotes {
+    display: inline-grid;
+}
+
+.chynotes h2 {
+    text-decoration: underline;
+}
+
+.chynotes p {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    border: 3px solid rgb(221, 45, 5);
+    padding: 5px;
+    margin: 16px;
+}
+
+.chynotes a {
+    /* color: rgb(8, 167, 48); */
+    color: black;
+    text-decoration: none;
+}
+
+.chynotes p:hover {
+    /* color: rgb(11, 11, 11); */
+    background-color: rgb(219, 229, 226);
+}
+
 #form {
     font-family: cursive;
     font-weight: bold;
