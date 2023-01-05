@@ -251,13 +251,7 @@ body > h2{
 }
 
 #topic1{
-    margin: 5%;
-    color: #0e35f4;
-    text-decoration: none;
-}
-
-#topic{
-    margin: auto;
-    color: #0e35f4;
+    text-align: center;
+    color: #0943f5;
     text-decoration: none;
 }
