@@ -47,10 +47,13 @@ nav a {
     box-shadow: 1px 0px 9px 1px #7167ab;
     /* margin-top: 200px;
     margin-left: 300px; */
+    background: #9d8262;
+    border-radius: 68px;
 }
 
 .second form {
     padding: 5px;
+    border-radius: 68px;
 
 }
 
