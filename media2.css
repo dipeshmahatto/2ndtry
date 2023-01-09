@@ -8,11 +8,12 @@
     box-shadow: 1px 0px 9px 1px #7167ab;
     /* margin-top: 200px;
     margin-left: 300px; */
+    border-radius: 68px;
 }
 
 .second form {
     padding: 5px;
-
+    border-radius: 68px;
 }
 
 .second form input {
@@ -104,23 +105,23 @@
 }
 #name {
     margin-left: 0px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     width: 90%;
     
 }
 #class {
     margin-left: 0px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     width: 90%;
 }
 #phone{
     margin-left: 0px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     width: 90%;
 }
 #subject {
     margin-left: 0px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     width: 90%;
 }
 

@@ -39,8 +39,7 @@ nav a {
 
 .second {
     width: 30%;
-    /* border: 2px solid red; */
-    border-radius: 6px;
+    border: 2px solid red;
     position: absolute;
     left: 5%;
     top: 15%;
@@ -59,11 +58,18 @@ nav a {
 
 .second form input {
     margin: 20px;
+    padding-left: 10px;
 }
 
 .second .submit {
     margin-left: 40%;
     font-size: 1rem;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.second h1{
+    padding: 20px;
 }
 
 .pdf {
@@ -231,18 +237,21 @@ body p {
     margin-left: 43px;
     font-size: 1rem;
     width: 50%;
+    border-radius: 15px;
     
 }
 #class {
     margin-left: 47px;
     font-size: 1rem;
     width: 50%;
+    border-radius: 15px;
 
 }
 #phone{
     margin-left: 21px;
     font-size: 1rem;
     width: 50%;
+    border-radius: 15px;
 
 }
 
@@ -250,6 +259,7 @@ body p {
     margin-left: 27px;
     font-size: 1rem;
     width: 50%;
+    border-radius: 15px;
 
 }
 
