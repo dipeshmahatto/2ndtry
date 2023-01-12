@@ -110,7 +110,8 @@
 }
 
 .pdf p {
-    color: red;
+    width: 150px;
+    color: #0c0202;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
@@ -130,8 +131,8 @@
     background-color: rgb(219, 229, 226);
 }
 
-.pdf p a:hover{
-    color: rgb(241, 13, 241);
+.pdf  a:hover p{
+    color: rgb(14, 124, 214);
 }
 .pdf h2 {
     text-align: center;
@@ -141,7 +142,7 @@
 }
 
 .pdf h3 {
-    color: rgb(221, 20, 181);
+    color: rgb(255 9 9);
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 20px;

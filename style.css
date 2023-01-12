@@ -1,280 +1,349 @@
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"); */
+
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-    background-color: #cfcbe8;
+  background-color: #cfcbe8;
 }
 
 .first {
-    width: 100%;
+    /* width: 100%; */
+    box-sizing: border-box;
 }
 
-nav {
-    text-align: right;
-    margin-top: 10px;
-    margin-right: 15px;
-    position: absolute;
-    right: 70px;
-    top: 10px;
-
+:root {
+  --clr: #cfcbe8;
+}
+.navigation {
+  width: 25rem;
+  height: 4.375rem;
+  background: #cfcbe8;
+  position: absolute;
+  top: 2.5rem;
+  right: 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
-nav a {
-    color: rgb(0, 46, 249);
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    padding-right: 70px;
-    padding-left: 5px;
-    font-weight: bold;
-    /* border: 3px solid rgb(247, 5, 21); */
+.navigation ul {
+  display: flex;
+  width: 350px;
+  padding-left: 0;
 }
 
-/* nav a:hover {
-    text-decoration: 4px rgb(207, 53, 53) underline;
-      color: rgb(92, 112, 203);
-} */
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: #0a042f;
+}
+
+.navigation ul li.active a .icon {
+  transform: translateY(-32px);
+}
+
+.navigation ul li a .text {
+  position: absolute;
+  color: #0a042f;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+.indicator {
+  position: absolute;
+  top: -58%;
+  width: 70px;
+  height: 70px;
+  background: #29fd53;
+  border-radius: 50%;
+  border: 6px solid var(--clr);
+  transition: 0.5s;
+}
+
+.navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(70px * 0));
+}
+.navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(70px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(70px * 3));
+}
+.navigation ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(70px * 4));
+}
 
 .second {
-    width: 30%;
-    border: 2px solid red;
-    position: absolute;
-    left: 5%;
-    top: 15%;
-    box-shadow: 1px 0px 9px 1px #7167ab;
-    /* margin-top: 200px;
+  width: 30%;
+  border: 2px solid red;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  box-shadow: 1px 0px 9px 1px #7167ab;
+  /* margin-top: 200px;
     margin-left: 300px; */
-    background: #9d8262;
-    border-radius: 68px;
+  background: #9d8262;
+  border-radius: 68px;
 }
 
 .second form {
-    padding: 5px;
-    border-radius: 68px;
-
+  padding: 5px;
+  border-radius: 68px;
 }
 
 .second form input {
-    margin: 20px;
-    padding-left: 10px;
+  margin: 20px;
+  padding-left: 10px;
 }
 
 .second .submit {
-    margin-left: 40%;
-    font-size: 1rem;
-    border-radius: 8px;
-    padding: 5px;
+  margin-left: 40%;
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 5px;
 }
 
-.second h1{
-    padding: 20px;
+.second h1 {
+  padding: 20px;
 }
 
 .pdf {
-    display: inline-block;
-    position: absolute;
-    left: 42%;
-    top: 25%;
+  display: inline-block;
+  position: absolute;
+  left: 40%;
+  top: 25%;
 }
 
 .pdf h2 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .pdf p {
-    color: red;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    /* border: 3px solid rgb(221, 45, 5); */
-    box-shadow: 1px 0px 9px 2px #7167ab;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
+    width: 200px;
+  color: #680a0a;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  /* border: 3px solid rgb(221, 45, 5); */
+  box-shadow: 1px 0px 9px 2px #7167ab;
+  border-radius: 5px;
+  /* padding: 10px; */
+  margin: 5px;
 }
 
 .pdf a {
-    color: rgb(8, 167, 48);
-    text-decoration: none;
+  color: rgb(8, 167, 48);
+  text-decoration: none;
 }
 
 .pdf p:hover {
-    background-color: rgb(219, 229, 226);
+  background-color: rgb(219, 229, 226);
 }
 
-.pdf p a:hover{
-    color: rgb(255, 0, 255);
+.pdf a:hover p {
+  color: rgb(14, 124, 214);
 }
 .pdf h2 {
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 20px;
-    font-size: 21px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 20px;
+  font-size: 21px;
 }
 
 .pdf h3 {
-    color: rgb(221, 20, 181);
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 20px;
-    font-size: x-large;
+  color: rgb(255 9 9);
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 20px;
+  font-size: x-large;
 }
 
 body p {
-    display: inline-block;
-    text-align: center;
-    margin: 50px;
+  display: inline-block;
+  text-align: center;
+  margin: 50px;
 }
 
 .suscribe .btn {
-    background-color: red;
-    /* color: rgb(16, 174, 242); */
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 2px;
-    padding: 15px 15px;
-    border: none;
-    border-radius: 6px;
+  background-color: red;
+  /* color: rgb(16, 174, 242); */
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 2px;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 6px;
 }
 
 .suscribe {
-    background-color: rgb(105, 105, 215);
-    border: none;
-    border-radius: 3px;
-
+  background-color: rgb(105, 105, 215);
+  border: none;
+  border-radius: 3px;
 }
 
 .suscribe h4 {
-    color: rgb(17, 25, 15);
-    display: block;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 24px;
-    text-align: center;
-    text-decoration: underline;
+  color: rgb(17, 25, 15);
+  display: block;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .suscribe form {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .suscribe .in {
-    width: 250px;
-    height: 45px;
-    margin-right: 0px;
-    border-radius: 5px;
+  width: 250px;
+  height: 45px;
+  margin-right: 0px;
+  border-radius: 5px;
 }
 
 .phynotes {
-    display: inline-grid;
+  display: inline-grid;
 }
 
 .phynotes h2 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .phynotes p {
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    border: 3px solid rgb(221, 45, 5);
-    padding: 5px;
-    margin: 16px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  border: 3px solid rgb(221, 45, 5);
+  padding: 5px;
+  margin: 16px;
 }
 
 .phynotes a {
-    /* color: rgb(8, 167, 48); */
-    color: black;
-    text-decoration: none;
+  /* color: rgb(8, 167, 48); */
+  color: black;
+  text-decoration: none;
 }
 
 .phynotes p:hover {
-    /* color: rgb(11, 11, 11); */
-    background-color: rgb(219, 229, 226);
+  /* color: rgb(11, 11, 11); */
+  background-color: rgb(219, 229, 226);
 }
 
-
 .chynotes {
-    display: inline-grid;
+  display: inline-grid;
 }
 
 .chynotes h2 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .chynotes p {
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    border: 3px solid rgb(221, 45, 5);
-    padding: 5px;
-    margin: 16px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  border: 3px solid rgb(221, 45, 5);
+  padding: 5px;
+  margin: 16px;
 }
 
 .chynotes a {
-    /* color: rgb(8, 167, 48); */
-    color: black;
-    text-decoration: none;
+  /* color: rgb(8, 167, 48); */
+  color: black;
+  text-decoration: none;
 }
 
 .chynotes p:hover {
-    /* color: rgb(11, 11, 11); */
-    background-color: rgb(219, 229, 226);
+  /* color: rgb(11, 11, 11); */
+  background-color: rgb(219, 229, 226);
 }
 
 #form {
-    font-family: cursive;
-    font-weight: bold;
-    padding-left: 20px;
-    font-size: 1rem;
+  font-family: cursive;
+  font-weight: bold;
+  padding-left: 20px;
+  font-size: 1rem;
 }
 #name {
-    margin-left: 43px;
-    font-size: 1rem;
-    width: 50%;
-    border-radius: 15px;
-    
+  margin-left: 43px;
+  font-size: 1rem;
+  width: 50%;
+  border-radius: 15px;
 }
 #class {
-    margin-left: 47px;
-    font-size: 1rem;
-    width: 50%;
-    border-radius: 15px;
-
+  margin-left: 47px;
+  font-size: 1rem;
+  width: 50%;
+  border-radius: 15px;
 }
-#phone{
-    margin-left: 21px;
-    font-size: 1rem;
-    width: 50%;
-    border-radius: 15px;
-
+#phone {
+  margin-left: 21px;
+  font-size: 1rem;
+  width: 50%;
+  border-radius: 15px;
 }
 
 #subject {
-    margin-left: 27px;
-    font-size: 1rem;
-    width: 50%;
-    border-radius: 15px;
-
+  margin-left: 27px;
+  font-size: 1rem;
+  width: 50%;
+  border-radius: 15px;
 }
 
-hr{
-    margin: 1px;
-    width: 90%;
-    height: 2px;
-    background-color: #e5a1a1;
+hr {
+  margin: 1px;
+  width: 90%;
+  height: 2px;
+  background-color: #e5a1a1;
 }
-body > h2{
-    color:green;
-    margin-top: 25px;
-    font-size: 40px;
-    text-align: center;
-    text-decoration: 3px solid red underline;
+body > h2 {
+  color: green;
+  margin-top: 25px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: 3px solid red underline;
 }
 /* .pdf p  a:visited{
     background-color: green;
@@ -283,17 +352,18 @@ body > h2{
 } */
 
 .cp-text {
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    color: rgba(0,0,0,.7);
-    text-shadow: 0 1px rgb(255 255 255 / 10%);
-    background: #998eb1;
-    margin: 0;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  bottom:0px;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px rgb(255 255 255 / 10%);
+  background: #998eb1;
+  margin: 0;
 }
 
-#topic1{
-    text-align: center;
-    color: #0943f5;
-    text-decoration: none;
+#topic1 {
+  text-align: center;
+  color: #0943f5;
+  text-decoration: none;
 }

@@ -16,11 +16,51 @@
 
 <body>
     <div class="first">
-        <nav>
-            <a href="index.html" class="btn btn-primary">Home</a>
-            <a href="#" class="btn btn-primary">Gallery</a>
-            <hr>
-        </nav>
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="text">Message</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="camera-outline"></ion-icon>
+                        </span>
+                        <span class="text">Photos</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
         <div class="second">
             <h1>Connect with us !!! <br>
                 Fill this form :-
@@ -48,24 +88,43 @@
     </div>
     <div class="pdf">
         <h2>Notes</h2>
-        <h3>click on the Subject to get your notes </h3>
-        <p>
-            <a href="physics/Physics.html"> Physics &#128526 </a>
-        </p>
-        <p>
-            <a href="Chemistry/chemistry.html"> Chemistry &#129313 </a>
-        </p>
-        <p>
-            <a href="math.html"> Math &#128525 </a>
-        </p>
-        <p>
-            <a href="Biology.html"> Biology &#128564</a>
-        </p>
+        <h3>Notes of class 11</h3>
+
+        <a href="physics/Physics.html">
+            <p>Physics</p>
+        </a>
+
+        <a href="Chemistry/chemistry.html">
+            <p>Chemistry</p>
+        </a>
+
+        <a href="Math/math.html">
+            <p>Math</p>
+        </a>
+
+        <a href="Biology/Biology.html">
+            <p>Biology</p>
+        </a>
+
     </div>
 
     <p class="cp-text">
         © Copyright 2022 by NEET prepration team. All rights reserved.
     </p>
+
+    <script>
+        const list = document.querySelectorAll('.list');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('active'))
+            this.classList.add('active');
+        }
+        list.forEach((item) =>
+            item.addEventListener('click', activeLink))
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
 </body>
 
 </html>
