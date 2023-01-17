@@ -21,7 +21,7 @@ body {
 .navigation {
   width: 25rem;
   height: 4.375rem;
-  background: #cfcbe8;
+  /* background: #cfcbe8; */
   position: absolute;
   top: 2.5rem;
   right: 10px;
